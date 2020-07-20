@@ -1,0 +1,4 @@
+rootProject.name = 'obsolete-validation'
+
+include 'utils'
+project(':utils').projectDir = file('../utils')

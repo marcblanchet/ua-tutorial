@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+mainClassName = 'org.viagenie.ua.tutorial.Main'
+
+group 'org.viagenie.ua.tutorial'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.sun.mail:jakarta.mail:1.6.5'
+    compile 'com.ibm.icu:icu4j:67.1'
+    compile project(':utils')
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

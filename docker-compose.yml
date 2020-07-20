@@ -1,0 +1,20 @@
+version: "3.4"
+
+services:
+  mailhog-eai: # fake smtp server to test SMTPUTF8 compliance
+    container_name: mailhog-eai
+    image: mailhog:eai
+    build:
+      context: ./mailhog-eai
+      dockerfile: ./Dockerfile
+    ports: 
+      - "1025:1025/tcp"
+      - "8025:8025/tcp"
+  ua-tuto-java:
+    container_name: ua-tuto-java
+    image: ua-tuto:java
+    command: tail -F anything
+    network_mode: host # allow to call services on the host directly (mainly mailhog-eai image)
+    build:
+        context: .
+        dockerfile: ./Dockerfile
