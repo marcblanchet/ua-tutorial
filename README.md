@@ -61,3 +61,7 @@ to build and create the executables here:
 
     ./eai-validation/build/install/eai-validation/bin/eai-validation
     ./obsolete-validation/build/install/obsolete-validation/bin/obsolete-validation
+
+## Acknowledgements
+
+This work was done by Viagenie, under a contract by ICANN.
