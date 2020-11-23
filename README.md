@@ -1,15 +1,16 @@
-# UA Tutorial Code Examples
+# Universal Acceptance Java Tutorial Code Examples
 
-This is a project containing code examples for the UA tutorial made for ICANN.
+This is a project containing code examples for the UA Java tutorial authored and delivered by Viagenie
+ to the ICANN Universal Acceptance community.
 
-There are currently two projects in this solution:
+There are currently two projects in this repo:
 
 1. eai-validation which contains the UA tutorial full example of the correct way to validate and send an email with ICU & Jakarta Mail in Java
 2. obsolete-validation which contains the wrong and obsolete way (validation with a regex) shown at the beginning of the tutorial
 
 ## Testing the Examples With Docker
 
-If you just want to do some tests with the commandline, docker is your friend. To start 
+If you just want to do some tests with the commandline, docker is the easiest route. To start 
 a fake smtp server and examples ready to run: 
 
     $ docker-compose up -d
@@ -61,6 +62,12 @@ to build and create the executables here:
 
     ./eai-validation/build/install/eai-validation/bin/eai-validation
     ./obsolete-validation/build/install/obsolete-validation/bin/obsolete-validation
+
+## References
+
+* [ICANN Universal Acceptance Steering Group](https://uasg.tech)
+* [UASG018A Report on Universal Acceptance Compliance Testing] (https://uasg.tech/wp-content/uploads/documents/UASG018A-en-digital.pdf)
+
 
 ## Acknowledgements
 
